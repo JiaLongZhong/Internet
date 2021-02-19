@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -9,7 +9,19 @@
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
           integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" rel="stylesheet">
 
-    <title>Hello, world!</title>
+    <style>
+        body {
+            background-color:silver;
+        }
+        button{width:250px}
+        h1{text-align: left}
+        div.b {text-align: left}
+        ul {
+            text-align: left;
+            list-style-position: inside;
+        }
+    </style>
+    <title>About Us</title>
 
     <!-- Navbar content -->
 </head>
@@ -21,13 +33,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link"  href="Homepage.html">Home</a>
+                    <a class="nav-link"  href="Homepage.html" >Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="Team.html">Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="About.html">About</a>
+                    <a class="nav-link"  href="About.html">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="History.html">History of the Internet</a>
@@ -36,7 +48,7 @@
                     <a class="nav-link" href="Invention.html">The Invention of the Internet</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Browser_War.html">Browser War</a>
+                    <a class="nav-link" href="Browser_War.html">Browser Wars</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Internet_Search.html">Internet Search</a>
@@ -53,18 +65,62 @@
     </div>
 </nav>
 <body>
-<h1>About Us</h1>
-<div class="jumbotron">
-    <h1 style="text-align:center" class="display-4">About Us</h1>
-    <hr class="my-4">
-    <h2 style="text-align:left"> Click Below To Start Learning About The History Of The Internet:</h2>
+<h1>Meet the Team:</h1>
+<div class="row">
+    <div class="col-sm">
+        <div>
+            <img src="Image/WIN_20210219_10_41_51_Pro.jpg" class="rounded-circle" alt="browser" width="400" height="400">
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="card"  style="width: 250px; height:200px">
+            <div class="card-header">
+                Member:
+            </div>
+            <p> Name: Jia Zhong</p>
+            <p>Email: jlz6@njit.edu</p>
+            <p>Education: NJIT</p>
+            <p><a href="https://njit.joinhandshake.com/users/15134682">Handshake Account</a></p>
+        </div>
+        <div class="card"  style="width: 250px; height:250px">
+            <div class="card-header">
+                Current Page: Team
+            </div>
+            <form method="get" action="Homepage.html">
+                <button type="submit">Home Page</button>
+            </form>
+            <form method="get" action="About.html">
+                <button type="submit">Objective</button>
+            </form>
+            <form method="get" action="Invention.html">
+                <button type="submit">Creation</button>
+            </form>
+            <form method="get" action="Browser_War.html">
+                <button type="submit">Browser Wars</button>
+            </form>
+            <form method="get" action="Dot_Com.html">
+                <button type="submit">.COM</button>
+            </form>
+            <form method="get" action="Internet_Search.html">
+                <button type="submit">Internet Search</button>
+            </form>
+            <form method="get" action="People.html">
+                <button type="submit">VIP</button>
+            </form>
+            <form method="get" action="History.html">
+                <button type="submit">Timeline</button>
+            </form>
+        </div>
+    </div>
 </div>
+</div>
+
+</div>
+
+
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script crossorigin="anonymous"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+</script>
 </body>
 </html>
